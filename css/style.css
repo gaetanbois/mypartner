@@ -162,23 +162,23 @@ h3 {
     text-align: center;
 }
 .card{
-    box-shadow:2px 2px 20px rgba(0,0,0,0.3); 
+    box-shadow:2px 2px 20px rgba(0,0,0,0.3);
     border:none; margin-bottom:30px;
 }
 .card-01 .card-body{
     position:relative; padding-top:40px;
 }
 .card-01 .badge-box{
-    position:absolute; 
-    top:-20px; 
-    left:50%; 
-    width:100px; 
+    position:absolute;
+    top:-20px;
+    left:50%;
+    width:100px;
     height:100px;
-    margin-left:-50px; 
+    margin-left:-50px;
     text-align:center;
 }
 .card-01.height-fix{
-    height:455px; 
+    height:455px;
     overflow:hidden;}
 .card-01.height-fix .card-img-top{
     width:auto!imporat;
@@ -191,4 +191,91 @@ h3 {
 }
 .footer {
     height: 1000px;
+}
+
+
+/*------------------ Formulaires -------------*/
+
+.form_choice {
+    display: block;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.checkboxgroup {
+    display: inline-block;
+    text-align: center;
+}
+
+.user_type {
+    display: inline-block;
+    text-align: center;
+}
+
+.submit {
+    text-align: center;
+}
+
+.user_type {
+    display: inline-block!important;
+    text-align: center!important;
+}
+.user_type label {
+    display: block!important;
+}
+
+.user-form {
+    background-color: #03b0ff;
+    background-color: rgba(3,176,255, 0.6);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius:15px;
+    display:none;
+}
+
+.user-form input {
+    margin-bottom: 5px;
+}
+
+.nom-user {
+    margin-top: 20px;
+}
+
+#submit-form {
+    padding: 15px 30px 15px 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.btn-submit {
+    background-color: #fd9700;
+}
+
+/** css from https://bootsnipp.com/snippets/featured/register-page-design **/
+
+span.input-group-addon i {
+    color: #009edf;
+    font-size: 17px;
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 11px;
+    padding-top: 3px;
+}
+
+.form-control {
+    height: auto!important;
+    padding: 8px 12px !important;
+}
+
+.input-group {
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+}
+
+.control-label {
+    padding-top: 3px;
 }

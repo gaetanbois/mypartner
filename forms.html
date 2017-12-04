@@ -1,0 +1,107 @@
+<div class="soutien" ng-controller="UsersController as uc">
+    <div class="container">
+        <hr>
+        <h1>
+            <i class="fa fa-paper-plane"></i>
+            <span>Soutenez-nous</span>
+        </h1>
+        <form>
+            <div class="form_choice">
+                <div class="col-md-4 user_type form-group">
+                    <label for="association_id">
+                        <img src="img/ic_aidez.png" alt="Association">
+                    </label>
+                    <input type="radio" name="user_type" ng-model="user_type" id="association_id" value="Association">
+                </div>
+                <div class="col-md-4 user_type">
+                    <label for="commercant_id">
+                        <img src="img/ic_cagnottez.png" alt="Commerçant">
+                    </label>
+                    <input type="radio" name="user_type" ng-model="user_type" id="commercant_id" value="Commercant">
+                </div>
+                <div class="col-md-4 user_type">
+                    <label for="licencie_id">
+                        <img src="img/ic_benefice.png" alt="licencie">
+                    </label>
+                    <input type="radio" name="user_type" ng-model="user_type" id="licencie_id" value="Licencie">
+                </div>
+            </div>
+
+            <!-- Link is used to scroll to form when user clicks on its icon-->
+            <a name="user-form"></a>
+            <div class="user-form col-md-6 col-md-pull-1">
+
+                <div class="form-group">
+                    <label for="nom_form" class="col-md-4 control-label">Votre nom</label>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-user fa-fw" aria-hidden="true"></i></span>
+                        <input type="text" name="nom" placeholder="Indiquez votre nom" class="form-control" ng-model="nom"
+                               id="nom_form" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="prenom_form" class="col-md-4 control-label">Votre prénom</label>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-user fa-fw" aria-hidden="true"></i></span>
+                        <input type="text" name="prenom" placeholder="Indiquez votre prénom" class="form-control"
+                               ng-model="prenom" id="prenom_form" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="date_naissance_form" class="col-md-4 control-label">Votre date de naissance</label>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-birthday-cake fa-fw" aria-hidden="true"></i></span>
+                        <input type="date" name="date_naissance" placeholder="Indiquez votre date de naissance"
+                               class="form-control" ng-model="date_naissance" id="date_naissance_form" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="adresse_form" class="col-md-4 control-label">Votre adresse</label>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-address-card fa-fw" aria-hidden="true"></i></span>
+                        <input type="text" name="adresse" placeholder="Indiquez votre adresse" class="form-control"
+                               ng-model="adresse" id="adresse_form" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="cp_form" class="col-md-4 control-label">Votre code postal</label>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-map-marker fa-fw" aria-hidden="true"></i></span>
+                        <input type="text" name="cp" placeholder="Indiquez votre code postal" class="form-control" ng-model="cp"
+                               id="cp_form" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="club_form" class="col-md-4 control-label">Votre club</label>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-futbol-o fa-fw" aria-hidden="true"></i></span>
+                        <input type="text" name="club" placeholder="Indiquez votre club" class="form-control" ng-model="cclub"
+                               id="club_form" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email_form" class="col-md-4 control-label">Votre email</label>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i></span>
+                        <input type="email" name="email" placeholder="Indiquez votre email" class="form-control" ng-model="email"
+                               id="email_form" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="cp_form" class="col-md-4 control-label">Votre téléphone</label>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-phone fa-fw" aria-hidden="true"></i></span>
+                        <input type="tel" name="telephone" placeholder="Indiquez votre numéro de téléphone" class="form-control"
+                               ng-model="telephone" id="telephone_form" required>
+                    </div>
+                </div>
+                <div class="row submit">
+                    <button class="btn btn-submit" type="submit" id="submit-form"
+                            ng-click="uc.saveUser(nom, prenom, date_naissance, adresse, cp, club, email,telephone)">
+                        Valider
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

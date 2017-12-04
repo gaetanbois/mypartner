@@ -30,11 +30,11 @@ section::after {
   position: absolute;
   top: 0;
   left: 50%;
-  width: 24px;
-  height: 24px;
+  width: 36px;
+  height: 36px;
   margin-left: -12px;
-  border-left: 3px solid #fff;
-  border-bottom: 3px solid #fff;
+  border-left: 3px solid #8e24aa;
+  border-bottom: 3px solid #8e24aa;
   -webkit-transform: rotateZ(-45deg);
   transform: rotateZ(-45deg);
   -webkit-animation: sdb06 1.5s infinite;
@@ -68,15 +68,18 @@ section::after {
   }
 }
 /*-----------------HEADER-----------------------*/
-.btn-large {
+.btn-primary {
+    margin-top: 20px;
     background-color: #fd9700;
+    border-radius: 15px;
 }
-.btn-large:hover {
+.btn-primary:hover {
     background-color: #8e24aa;
 }
 h1 {
     text-align: center;
-    font-size: 2em;
+    font-size: 3em;
+    margin-top: 40px;
 }
 .home {
     background-image:url(../img/backgroun-opacity.jpg);
@@ -86,7 +89,7 @@ h1 {
     height: 100%;
 }
 #logo-home {
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
 #logo-nav {
@@ -94,7 +97,10 @@ h1 {
     margin-left: 10px;
 }
 
-.nav-wrapper {
+.navbar-light .navbar-nav .nav-link {
+    color:white;
+}
+.navbar {
     background-color: #03a6f0;
 }
 
@@ -128,9 +134,10 @@ hr {
 /*------------------Comment ça marche ?-------------*/
 
 h3 {
+    padding-top: 20px;
     font-size: 1.5em;
 }
 
-.s4 {
+.col {
     text-align: center;
 }

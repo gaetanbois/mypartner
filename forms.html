@@ -1,4 +1,4 @@
-<div class="soutien" ng-controller="UsersController as uc">
+<div class="soutien">
     <div class="container">
         <hr>
         <h1>
@@ -47,14 +47,18 @@
                                ng-model="prenom" id="prenom_form" required>
                     </div>
                 </div>
+
+
                 <div class="form-group">
                     <label for="date_naissance_form" class="col-md-4 control-label">Votre date de naissance</label>
                     <div class="input-group">
                         <span class="input-group-addon"><i class="fa fa-birthday-cake fa-fw" aria-hidden="true"></i></span>
-                        <input type="date" name="date_naissance" placeholder="Indiquez votre date de naissance"
-                               class="form-control" ng-model="date_naissance" id="date_naissance_form" required>
+                        <input type="text" name="date_naissance" placeholder="jj/mm/aaaa"
+                               class="form-control" ng-model="date_naissance" id="date_naissance_form" readonly required>
                     </div>
                 </div>
+
+
                 <div class="form-group">
                     <label for="adresse_form" class="col-md-4 control-label">Votre adresse</label>
                     <div class="input-group">
@@ -75,7 +79,7 @@
                     <label for="club_form" class="col-md-4 control-label">Votre club</label>
                     <div class="input-group">
                         <span class="input-group-addon"><i class="fa fa-futbol-o fa-fw" aria-hidden="true"></i></span>
-                        <input type="text" name="club" placeholder="Indiquez votre club" class="form-control" ng-model="cclub"
+                        <input type="text" name="club" placeholder="Indiquez votre club" class="form-control" ng-model="club"
                                id="club_form" required>
                     </div>
                 </div>
@@ -96,10 +100,8 @@
                     </div>
                 </div>
                 <div class="row submit">
-                    <button class="btn btn-submit" type="submit" id="submit-form"
-                            ng-click="uc.saveUser(nom, prenom, date_naissance, adresse, cp, club, email,telephone)">
-                        Valider
-                    </button>
+                    <input type="submit" class="btn btn-submit" value="Valider" id="submit-form"
+                           ng-click="uc.saveLicencie(nom, prenom, date_naissance, adresse, cp, club, email,telephone)">
                 </div>
             </div>
         </form>

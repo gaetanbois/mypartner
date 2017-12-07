@@ -25,10 +25,15 @@ var app = angular.module('app', []);
             //     vm.users = response.data;
             // });
         }
-
-        // todo add toast after save
+        
         // todo ensure date format
         function saveLicencie(nom, prenom, date_naissance, adresse, cp, club, email, telephone) {
+            // ensure no parameter is empty
+            if(nom === undefined || prenom === undefined || date_naissance === undefined || adresse === undefined
+                || cp === undefined || club === undefined || email === undefined || telephone === undefined) {
+                return;
+            }
+
             // var url = "http://mypartner.gearhostpreview.com/src/SaveUsers.php?prenom="
             //     + prenom + "&nom=" + nom + "&user_type=" + user_type + "&email=" + email + "&ville=" + ville;
             var date_naissance_tmp = date_naissance.split("/");
@@ -38,6 +43,12 @@ var app = angular.module('app', []);
                 + "&cp=" + cp + "&club=" + club + "&email=" + email + "&telephone=" + telephone;
             var userPromise = $http.get(url);
             userPromise.then(function(response){
+                $.toast({
+                    heading: 'Félicitations !',
+                    text: 'Votre inscription a bien été validée, merci !',
+                    icon: 'success',
+                    hideAfter:4000
+                })
             });
         }
     }

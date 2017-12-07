@@ -9,7 +9,8 @@
 
 <!--        <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>-->
         <link rel="stylesheet" href="bootstrap-4/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-        <link type="text/css" rel="stylesheet" href="js/jquery-ui-1.12.1.custom/jquery-ui.min.css"/>
+        <link type="text/css" rel="stylesheet" href="js/lib/jquery-ui-1.12.1.custom/jquery-ui.min.css"/>
+        <link type="text/css" rel="stylesheet" href="css/lib/jquery.toast.min.css"/>
         <link type="text/css" rel="stylesheet" href="css/style.css"/>
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
         <link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -46,7 +47,7 @@
                 <img id="logo-home" src="img/Logo_MyPartner.png" alt="Logo MyPartner Blanc">
                 <h1>Vous voulez changer le monde ? <br>
                     Ne changez rien...</h1>
-                <a><button type="button" class="btn btn-primary btn-lg">Soutenez nous !</button></a>
+                <button type="button" class="btn btn-primary btn-lg" id="soutenez-nous">Soutenez nous !</button>
                 <section id="section06" class="demo">
                     <a href="#section07"><span></span></a>
                 </section>
@@ -143,11 +144,11 @@
 
         <!--Import jQuery before materialize.js-->
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script type="text/javascript" src="js/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
-        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/lib/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+        <script type="text/javascript" src="js/lib/jquery.toast.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-        <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/users.controller.js"></script>
+        <script type="text/javascript" src="js/app/script.js"></script>
+        <script type="text/javascript" src="js/app/users.controller.js"></script>
     </body>
 </html>

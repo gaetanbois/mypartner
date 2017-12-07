@@ -1,4 +1,7 @@
-<div class="soutien">
+
+
+<!-- Link is used to scroll to form when user clicks on "soutenez-nous" button-->
+<a name="user-form"></a><div class="soutien">
     <div class="container">
             <hr>
             <h1>
@@ -8,7 +11,7 @@
 
         <div class="row">
             <div class="col-md-12">
-                <form>
+                <form name="licencieForm">
                     <div class="form_choice">
                         <div class="row">
                             <div class="col-md-4 user_type form-group">
@@ -32,8 +35,6 @@
                         </div>
                     </div>
 
-                    <!-- Link is used to scroll to form when user clicks on its icon-->
-                    <a name="user-form"></a>
                     <div class="user-form col-md-6 offset-md-3">
 
                         <div class="form-group">
@@ -104,6 +105,7 @@
                         </div>
                         <div class="row submit">
                             <input type="submit" class="btn btn-submit col-md-4 offset-md-4" value="Valider" id="submit-form"
+                                   ng-disabled="licencieForm.$invalid"
                                    ng-click="uc.saveLicencie(nom, prenom, date_naissance, adresse, cp, club, email,telephone)">
                         </div>
                     </div>

@@ -93,7 +93,7 @@ h1 {
 }
 
 #logo-nav {
-    height: 64px;
+    height: 40px;
     margin-left: 10px;
 }
 
@@ -255,6 +255,7 @@ h3 {
 #date_naissance_form {
     background-color: #FFFFFF;
 }
+
 /** css from https://bootsnipp.com/snippets/featured/register-page-design **/
 
 span.input-group-addon i {

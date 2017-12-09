@@ -21,8 +21,8 @@ function scrollToAnchor(aid){
 }
 
 
-$('#soutenez-nous').on('click', function() {
-    $('#licencie_id').click();
+$('#soutenez-nous, #fleche-soutenez-nous').on('click', function() {
+    scrollToAnchor('user-form');
 });
 
 

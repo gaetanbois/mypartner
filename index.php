@@ -47,9 +47,9 @@
                 <img id="logo-home" src="img/Logo_MyPartner.png" alt="Logo MyPartner Blanc">
                 <h1>Vous voulez changer le monde ? <br>
                     Ne changez rien...</h1>
-                <button type="button" class="btn btn-primary btn-lg" id="soutenez-nous">Soutenez nous !</button>
-                <section id="section06" class="demo">
-                    <a href="#section07"><span></span></a>
+                <button type="button" class="btn btn-primary btn-lg" id="soutenez-nous">Soutenez-nous !</button>
+                <section id="fleche-soutenez-nous" class="demo">
+                    <a href=""><span></span></a>
                 </section>
             </div>
         </div>
@@ -57,9 +57,12 @@
 
         <div class="presentation">
             <div class="container">
-                <h2>Qui somme nous ?</h2>
+                <h2>Qui sommes-nous ?</h2>
                 <hr>
-                <p id="text-presentation">Nous aidons les associations à rendre le sport accessible à tous en supprimant les coûts liés à la pratique de ses licenciés tout en enrichissant leur expérience sportive</p>
+                <p id="text-presentation">
+                    Nous aidons les associations à rendre le sport accessible à tous en supprimant les coûts liés à la
+                    pratique de ses licenciés tout en enrichissant leur expérience sportive
+                </p>
             </div>
         </div>
         <div class="fonctionnement">
@@ -80,7 +83,7 @@
                     <div class="col">
                         <img class="icone-f" src="img/ic_aidez.png" alt="Icone d'aide">
                         <h3>AIDE</h3>
-                        <p class="text-fonctionnement">Je choisis l'association sportive que mes commerçants partenaires sponsorisent</p>
+                        <p class="text-fonctionnement">Je choisis l'association sportive que mes commerçants partenaires sponsorisent.</p>
                     </div>
                 </div>
             </div>

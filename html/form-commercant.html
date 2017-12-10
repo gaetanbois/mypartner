@@ -1,0 +1,63 @@
+<div class="user-form col-md-6 offset-md-3" id="commercant_form">
+    <div class="form-group">
+        <label for="nom_form_commercant" class="col-md-8 control-label">Votre nom</label>
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-user fa-fw" aria-hidden="true"></i></span>
+            <input type="text" name="nom" placeholder="Indiquez votre nom" class="form-control" ng-model="nom"
+                   id="nom_form_commercant" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="prenom_form_commercant" class="col-md-8 control-label">Votre prénom</label>
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-user fa-fw" aria-hidden="true"></i></span>
+            <input type="text" name="prenom" placeholder="Indiquez votre prénom" class="form-control"
+                   ng-model="prenom" id="prenom_form_commercant" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="nom_form_commerce" class="col-md-8 control-label">Nom du commerce</label>
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-user fa-fw" aria-hidden="true"></i></span>
+            <input type="text" name="nom_commerce" placeholder="Indiquez le nom de votre commerce" class="form-control"
+                   ng-model="nom_commerce" id="nom_form_commerce" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="type_form_commercant" class="col-md-8 control-label">Type de commerce</label>
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-user fa-fw" aria-hidden="true"></i></span>
+            <input type="text" name="type_commerce" placeholder="Indiquez le nom de votre commerce" class="form-control"
+                   ng-model="type" id="type_form_commercant" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="adresse_form_commercant" class="col-md-8 control-label">Votre adresse</label>
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-address-card fa-fw" aria-hidden="true"></i></span>
+            <input type="text" name="adresse" placeholder="Indiquez l'adresse de votre commerce" class="form-control"
+                   ng-model="adresse" id="adresse_form_commercant" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="cp_form_commercant" class="col-md-8 control-label">Votre code postal</label>
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-map-marker fa-fw" aria-hidden="true"></i></span>
+            <input type="text" name="cp" placeholder="Indiquez le code postal de votre commerce" class="form-control"
+                   ng-model="cp" id="cp_form_commercant" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="email_form_commercant" class="col-md-8 control-label">Votre email</label>
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i></span>
+            <input type="email" name="email" placeholder="Indiquez votre email" class="form-control"
+                   ng-model="email" id="email_form_commercant" required>
+        </div>
+    </div>
+    <div class="row submit">
+        <input type="submit" class="btn btn-submit col-md-4 offset-md-4 submit-form" value="Valider"
+               id="submit_form_commercant" ng-disabled="commercantForm.$invalid"
+               ng-click="uc.saveCommercant(nom, prenom, nom_commerce, type, adresse, cp, email)">
+    </div>
+</div>

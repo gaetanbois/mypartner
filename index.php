@@ -139,9 +139,59 @@
             </div>
         </div>
 
-        <?php
-            require('forms.html');
-        ?>
+        <!-- Link is used to scroll to form when user clicks on "soutenez-nous" button-->
+        <a name="user-form"></a>
+        <div class="soutien" id ="anchor-forms">
+            <div class="container">
+                <hr>
+                <h1>
+                    <i class="fa fa-paper-plane"></i>
+                    <span>Soutenez-nous</span>
+                </h1>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form_choice">
+                            <div class="row">
+                                <div class="col-md-4 user_type form-group">
+                                    <label for="association_id">
+                                        <img src="img/ic_aidez.png" alt="Association">
+                                    </label>
+                                    <input type="radio" name="user_type" id="association_id" value="Association">
+                                </div>
+                                <div class="col-md-4 user_type">
+                                    <label for="commercant_id">
+                                        <img src="img/ic_cagnottez.png" alt="Commerçant">
+                                    </label>
+                                    <input type="radio" name="user_type" id="commercant_id" value="Commercant">
+                                </div>
+                                <div class="col-md-4 user_type">
+                                    <label for="licencie_id">
+                                        <img src="img/ic_benefice.png" alt="licencie">
+                                    </label>
+                                    <input type="radio" name="user_type" id="licencie_id" value="Licencie">
+                                </div>
+                            </div>
+                        </div>
+                        <form name="licencieForm">
+                            <?php
+                                require('html/form-licencie.html');
+                            ?>
+                        </form>
+                        <form name="commercantForm">
+                            <?php
+                                require('html/form-commercant.html');
+                            ?>
+                        </form>
+                        <form name="associationForm">
+                            <?php
+                            require('html/form-association.html');
+                            ?>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="footer"></div>
 

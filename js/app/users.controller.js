@@ -15,6 +15,7 @@ var app = angular.module('app', []);
         vm.users = [];
         vm.getUsers = getUsers;
         vm.saveLicencie = saveLicencie;
+        vm.saveCommercant = saveCommercant;
 
         function getUsers(){
             // url += "baselines/compareRisks/" + idRiopp + "/" + date;
@@ -39,8 +40,31 @@ var app = angular.module('app', []);
             var date_naissance_tmp = date_naissance.split("/");
             date_naissance = date_naissance_tmp[2] + "-" + date_naissance_tmp[1] + "-"+ date_naissance_tmp[0];
             var url = "http://localhost:8888/Amazon%20Drive/Projets_perso/Web/MyPartnerGaetan/mypartner/src/SaveUsers.php"
-                + "?nom=" + nom + "&prenom=" + prenom + "&date_naissance=" + date_naissance + "&adresse=" + adresse
+                + "?user=licencie" + "&nom=" + nom + "&prenom=" + prenom + "&date_naissance=" + date_naissance + "&adresse=" + adresse
                 + "&cp=" + cp + "&club=" + club + "&email=" + email + "&telephone=" + telephone;
+            var userPromise = $http.get(url);
+            userPromise.then(function(response){
+                $.toast({
+                    heading: 'Félicitations !',
+                    text: 'Votre inscription a bien été validée, merci !',
+                    icon: 'success',
+                    hideAfter:4000
+                })
+            });
+        }
+
+        function saveCommercant(nom, prenom, nom_commerce, type, adresse, cp, email) {
+            // ensure no parameter is empty
+            if(nom === undefined || prenom === undefined || nom_commerce === undefined || type === undefined
+                || adresse === undefined || cp === undefined || email === undefined ) {
+                return;
+            }
+
+            // var url = "http://mypartner.gearhostpreview.com/src/SaveUsers.php?prenom="
+            //     + prenom + "&nom=" + nom + "&user_type=" + user_type + "&email=" + email + "&ville=" + ville;
+            var url = "http://localhost:8888/Amazon%20Drive/Projets_perso/Web/MyPartnerGaetan/mypartner/src/SaveUsers.php"
+                + "?user=commercant" + "&nom=" + nom + "&prenom=" + prenom + "&nom_commerce=" + nom_commerce
+                + "&type=" + type + "&adresse=" + adresse + "&cp=" + cp + "&email=" + email;
             var userPromise = $http.get(url);
             userPromise.then(function(response){
                 $.toast({

@@ -30,20 +30,56 @@ $DATABASE_NAME = "mypartner";
 $DATABASE_USERNAME = "mypartner";
 $DATABASE_PASSWORD = "Du2ecpjf_W_P";
 
-$bdd = new PDO('mysql:host=' . $HOST_ADDRESS .';dbname=' . $DATABASE_NAME, $DATABASE_USERNAME, $DATABASE_PASSWORD);
-$sql = 'insert into licencie(nom, prenom, date_naissance, adresse, cp, club, email, telephone)
-                  values(:nom, :prenom, :date_naissance, :adresse, :cp, :club, :email, :telephone)';
-$insert = $bdd->prepare($sql);
 
-$insert->bindParam(':nom', $_GET['nom']);
-$insert->bindParam(':prenom', $_GET['prenom']);
-$insert->bindParam(':date_naissance', $_GET['date_naissance']);
-$insert->bindParam(':adresse', $_GET['adresse']);
-$insert->bindParam(':cp', $_GET['cp']);
-$insert->bindParam(':club', $_GET['club']);
-$insert->bindParam(':email', $_GET['email']);
-$insert->bindParam(':telephone', $_GET['telephone']);
-$insert->execute();
+if($_GET['user'] == 'licencie') {
+    saveLicencie($HOST_ADDRESS, $DATABASE_NAME, $DATABASE_USERNAME, $DATABASE_PASSWORD);
+} else if ($_GET['user'] == 'commercant') {
+    saveCommercant($HOST_ADDRESS, $DATABASE_NAME, $DATABASE_USERNAME, $DATABASE_PASSWORD);
+}
+
+/**
+ * @param $HOST_ADDRESS
+ * @param $DATABASE_NAME
+ * @param $DATABASE_USERNAME
+ * @param $DATABASE_PASSWORD
+ */
+function saveLicencie($HOST_ADDRESS, $DATABASE_NAME, $DATABASE_USERNAME, $DATABASE_PASSWORD)
+{
+    $bdd = new PDO('mysql:host=' . $HOST_ADDRESS . ';dbname=' . $DATABASE_NAME, $DATABASE_USERNAME, $DATABASE_PASSWORD);
+    $sql = 'insert into licencie(nom, prenom, date_naissance, adresse, cp, club, email, telephone)
+                  values(:nom, :prenom, :date_naissance, :adresse, :cp, :club, :email, :telephone)';
+    $insert = $bdd->prepare($sql);
+
+    $insert->bindParam(':nom', $_GET['nom']);
+    $insert->bindParam(':prenom', $_GET['prenom']);
+    $insert->bindParam(':date_naissance', $_GET['date_naissance']);
+    $insert->bindParam(':adresse', $_GET['adresse']);
+    $insert->bindParam(':cp', $_GET['cp']);
+    $insert->bindParam(':club', $_GET['club']);
+    $insert->bindParam(':email', $_GET['email']);
+    $insert->bindParam(':telephone', $_GET['telephone']);
+    $insert->execute();
+}
+
+
+function saveCommercant($HOST_ADDRESS, $DATABASE_NAME, $DATABASE_USERNAME, $DATABASE_PASSWORD)
+{
+    $bdd = new PDO('mysql:host=' . $HOST_ADDRESS . ';dbname=' . $DATABASE_NAME, $DATABASE_USERNAME, $DATABASE_PASSWORD);
+    $sql = 'insert into commercant(nom, prenom, nom_commerce, type, adresse, cp, email)
+                  values(:nom, :prenom, :nom_commerce, :type, :adresse, :cp, :email)';
+    $insert = $bdd->prepare($sql);
+
+    $insert->bindParam(':nom', $_GET['nom']);
+    $insert->bindParam(':prenom', $_GET['prenom']);
+    $insert->bindParam(':nom_commerce', $_GET['nom_commerce']);
+    $insert->bindParam(':type', $_GET['type']);
+    $insert->bindParam(':adresse', $_GET['adresse']);
+    $insert->bindParam(':cp', $_GET['cp']);
+    $insert->bindParam(':email', $_GET['email']);
+    $insert->execute();
+}
+
+
 die();
 
 /********** JSON POC ***********/

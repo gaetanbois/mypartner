@@ -10,6 +10,6 @@
             - Ensure min/max length for each inputs
             - Sanitize data in server side
         - Commerçant
-            - Todo
+            - Done, add validations as in licencié
         - Association
             - Todo

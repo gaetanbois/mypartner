@@ -225,8 +225,6 @@ h3 {
 }
 
 .user-form {
-    background-color: #03b0ff;
-    background-color: rgba(3,176,255, 0.6);
     padding: 20px;
     margin-top: 20px;
     border-radius:15px;
@@ -241,19 +239,41 @@ h3 {
     margin-top: 20px;
 }
 
-#submit-form {
+.submit-form {
     padding: 15px 30px 15px 30px;
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-top: 15px;
+    cursor: pointer;
 }
 
-.btn-submit {
+.submit-form[disabled] {
+    cursor: default;
+}
+
+#submit_form_licencie, #submit_form_association {
     background-color: #fd9700;
+}
+
+#submit_form_commercant {
+    background-color: #03b0ff;
 }
 
 #date_naissance_form {
     background-color: #FFFFFF;
+}
+
+#licencie_form {
+    background-color: rgba(3,176,255, 0.6);
+}
+
+#commercant_form {
+    background-color: rgba(253,151,0, 0.8);
+}
+
+#association_form {
+    background-color: rgb(114,68,136);
+    background-color: rgba(114,68,136, 0.8);
 }
 
 /** css from https://bootsnipp.com/snippets/featured/register-page-design **/

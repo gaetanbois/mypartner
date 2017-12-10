@@ -31,9 +31,19 @@ $('#soutenez-nous, #fleche-soutenez-nous').on('click', function() {
 
 $('input:radio[name="user_type"]').change(function() {
     if($(this).val() === 'Licencie') {
-        $('.user-form').show();
-        scrollToAnchor('user-form');
+        $('#licencie_form').show();
+        $('#commercant_form').hide();
+        $('#association_form').hide();
+    } else if($(this).val() === 'Commercant') {
+        $('#commercant_form').show();
+        $('#licencie_form').hide();
+        $('#association_form').hide();
+    } else {
+        $('#association_form').show();
+        $('#commercant_form').hide();
+        $('#licencie_form').hide();
     }
+    scrollToAnchor('user-form');
 });
 
 

@@ -57,3 +57,4 @@ $('#date_naissance_form').datepicker({
         'Novembre', 'Décembre'],
     monthNamesShort: ['Jan', 'Fév', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Août', 'Sept', 'Oct', 'Nov', 'Déc']
 });
+

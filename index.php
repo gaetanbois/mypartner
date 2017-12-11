@@ -14,7 +14,6 @@
         <link type="text/css" rel="stylesheet" href="css/style.css"/>
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
         <link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
@@ -195,8 +194,9 @@
         </div>
 
         <div class="footer"></div>
-
+      
         <!--Import jQuery before materialize.js-->
+        <script type='text/javascript' src='node_modules/scrollreveal/dist/scrollreveal.min.js'></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="js/lib/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
         <script type="text/javascript" src="js/lib/jquery.toast.min.js"></script>
@@ -204,5 +204,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/app/script.js"></script>
         <script type="text/javascript" src="js/app/users.controller.js"></script>
+        <script type='text/javascript' src='js/scroll.js'></script>
+
     </body>
 </html>

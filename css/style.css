@@ -152,7 +152,7 @@ h3 {
 .clic-form {
     height: 400px;
     padding-top: 50px;
-    background-image: url(../img/soutenez-nous.png);
+    background-image: url(../img/soutenez-nous-opacity.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -302,4 +302,8 @@ input::-webkit-input-placeholder {
 
 .control-label {
     padding-top: 3px;
+}
+
+.visible .infinite fadeInDown {
+    
 }

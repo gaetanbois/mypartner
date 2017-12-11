@@ -14,6 +14,7 @@
         <link type="text/css" rel="stylesheet" href="css/style.css"/>
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
         <link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
@@ -103,7 +104,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="card card-01">
+                        <div class="card card-01 infinite fadeInDown">
                             <img class="card-img-top" src="img/Visu_commercant.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <span class="badge-box"><i class="fa fa-check"></i></span>

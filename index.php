@@ -7,7 +7,7 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!--Import materialize.css-->
 
-<!--        <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>-->
+        <!--        <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>-->
         <link rel="stylesheet" href="bootstrap-4/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         <link type="text/css" rel="stylesheet" href="js/lib/jquery-ui-1.12.1.custom/jquery-ui.min.css"/>
         <link type="text/css" rel="stylesheet" href="css/lib/jquery.toast.min.css"/>
@@ -71,19 +71,20 @@
                 <hr>
                 <div class="row">
                     <div class="col">
-                        <img class="icone-f" src="img/ic_benefice.png" alt="Icone de bénéfice">
-                        <h3>BÉNÉFICE</h3>
-                        <p class="text-fonctionnement">Récupère 5 à 30% de tes dépenses auprès de nos commmerçants partenaires.</p>
+                        <img class="icone-f" src="img/ic_aidez.png" alt="Icone d'aide">
+                        <h3>AIDE</h3>
+                        <p class="text-fonctionnement">Je choisis l'association sportive que mes commerçants partenaires sponsorisent.</p>
                     </div>
                     <div class="col">
                         <img class="icone-f" src="img/ic_cagnottez.png" alt="Icone de Cagnotte">
                         <h3>CAGNOTTE</h3>
                         <p class="text-fonctionnement">Cumule tes gains sur ton compte bancaire et finance l'activité sportive de ton choix.</p>
                     </div>
+
                     <div class="col">
-                        <img class="icone-f" src="img/ic_aidez.png" alt="Icone d'aide">
-                        <h3>AIDE</h3>
-                        <p class="text-fonctionnement">Je choisis l'association sportive que mes commerçants partenaires sponsorisent.</p>
+                        <img class="icone-f" src="img/ic_benefice.png" alt="Icone de bénéfice">
+                        <h3>BÉNÉFICE</h3>
+                        <p class="text-fonctionnement">Récupère 5 à 30% de tes dépenses auprès de nos commmerçants partenaires.</p>
                     </div>
                 </div>
             </div>
@@ -101,30 +102,10 @@
 
         <div class="clients">
             <div class="container">
+                <h2>Pour qui ?</h2>
+                <hr>
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="card card-01">
-                            <img class="card-img-top" src="img/Visu_commercant.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <span class="badge-box"><i class="fa fa-check"></i></span>
-                                <h4 class="card-title">Commerçants</h4>
-                                <hr>
-                                <p class="card-text">Boostez votre business sans vous engager financièrement. Développez votre clientèle, fidélisez-la et faites prospérer votre commerce grâce au partenariat MyPartner.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card card-01">
-                            <img class="card-img-top" src="img/Visu_asso.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <span class="badge-box"><i class="fa fa-check"></i></span>
-                                <h4 class="card-title">Associations</h4>
-                                <hr>
-                                <p class="card-text">Plus de budget et moins de contraintes pour pérénniser votre vie associative. My Partner vous permettra de générer de nouvelles sources de revenus afin de fidéliser les adhérents de votre association grâce au financement de nouveaux projets sportifs.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
+                    <div class="col">
                         <div class="card card-01">
                             <img class="card-img-top" src="img/Visu_sportif.jpg" alt="Card image cap">
                             <div class="card-body">
@@ -135,6 +116,87 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="col">
+                        <div class="card card-01">
+                            <img class="card-img-top" src="img/Visu_asso.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <span class="badge-box"><i class="fa fa-check"></i></span>
+                                <h4 class="card-title">Associations</h4>
+                                <hr>
+                                <p class="card-text">Plus de budget et moins de contraintes pour pérénniser votre vie associative. My Partner vous permettra de générer de nouvelles sources de revenus afin de fidéliser les adhérents de votre association grâce au financement de nouveaux projets sportifs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-01">
+                            <img class="card-img-top" src="img/Visu_commercant.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <span class="badge-box"><i class="fa fa-check"></i></span>
+                                <h4 class="card-title">Commerçants</h4>
+                                <hr>
+                                <p class="card-text">Boostez votre business sans vous engager financièrement. Développez votre clientèle, fidélisez-la et faites prospérer votre commerce grâce au partenariat MyPartner.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="application">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <img id="mockup" src="img/iphone-mypartner.png" alt="iphone mypartner">
+                    </div>
+                    <div class="col applilogo">
+
+                        <h3>Application bientôt disponible !</h3>
+                        <hr>
+                        <p>Rejoignez MyPartner, la plateforme sociale indispensable de l’univers sportif.<br><br>
+                            Le processus Win-Win pour chacunes des parties permet d’offrir un cercle vertueux et bénéfique.<br><br>
+                            L’application MyPartner permet de simplifier vos interactions et de voir votre cagnotte évoluer après chaque achat.
+                        </p>
+                        <img class="logoappli" src="img/appstore.png" alt="logo appli apple">
+                        <img class="logoappli" src="img/google.png" alt="logo appli google">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="titlepartner">
+            <h2>ILS NOUS FONT CONFIANCE</h2>
+        </div>
+        <div class="soutiens">
+            <div class="container">
+                <h2>Nos partenaires</h2>
+                <hr>
+                <div class="row">
+                    <div class="col">
+                        <img src="img/ic_partner1.png" alt="logo equipes">
+                        <h3>US Maubeuge</h3>
+                        <hr class="small">
+                        <p class="citation">"Notre objectif est clair, il faut trouver les 40K€ supplémentaire pour boucler notre budget, sinon on court droit à la catastrophe".</p>
+                    </div>
+                    <div class="col">
+                        <img src="img/ic_partner2.png" alt="logo equipes">
+                        <h3>ADAPT & FORM</h3>
+                        <hr class="small">
+                        <p class="citation">"Des subventions ou aide financière de la part de sponsors qui régleraient pas mal de nos problèmes, notamment celui de la communication et nous aideraient à nous développer.»</p>
+                    </div>
+                    <div class="col">
+                        <img src="img/ic_partner3.png" alt="logo equipes">
+                        <h3>RC ARDRES</h3>
+                        <hr class="small">
+                        <p class="citation">"Essayer de réduire nos dépenses ou faire des économies sur nos achats, aller chercher des sponsors pour continuer notre développement et faire attention à la bonne répartition des terrains pour le confort de nos licenciés."</p>
+                    </div>
+                </div>
+                <div>
+                    <img id="banniere" src="img/Bandeau_partenaires.png" alt="">
                 </div>
             </div>
         </div>
@@ -143,7 +205,6 @@
         <a name="user-form"></a>
         <div class="soutien" id ="anchor-forms">
             <div class="container">
-                <hr>
                 <h1>
                     <i class="fa fa-paper-plane"></i>
                     <span>Soutenez-nous</span>
@@ -175,12 +236,12 @@
                         </div>
                         <form name="licencieForm">
                             <?php
-                                require('html/form-licencie.html');
+                            require('html/form-licencie.html');
                             ?>
                         </form>
                         <form name="commercantForm">
                             <?php
-                                require('html/form-commercant.html');
+                            require('html/form-commercant.html');
                             ?>
                         </form>
                         <form name="associationForm">
@@ -194,7 +255,7 @@
         </div>
 
         <div class="footer"></div>
-      
+
         <!--Import jQuery before materialize.js-->
         <script type='text/javascript' src='node_modules/scrollreveal/dist/scrollreveal.min.js'></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

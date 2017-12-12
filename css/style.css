@@ -115,7 +115,7 @@ h1 {
 }
 .presentation {
     height: 300px;
-    background-color: #f3f5f8;
+    background-color: #f4f4f4;
 }
 h2 {
     font-size: 2em;
@@ -186,16 +186,66 @@ h3 {
 .card-body {
     height: 360px;
 }
-.clients {
-    margin-top: 60px;
-}
+
+/*
 .footer {
     height: 1000px;
 }
+*/
 
+#mockup {
+    height: 400px;
+}
 
+.logoappli {
+    height: 80px;
+}
+.applilogo {
+    padding-top: 2%;
+}
+.application {
+    background-color: #f4f4f4;
+    width: 100%;
+}
+
+.soutiens img {
+    height: 240px;
+}
+.soutiens {
+    margin-bottom: 60px;
+}
+
+.col-md-4 {
+    text-align: center;
+}
+
+.titlepartner {
+    background-image: url(../img/rejoins-nous.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+.titlepartner h2 {
+    font-size: 2.5em;
+    color: white;
+    padding-top: 4%;
+}
+.small {
+    width: 20px;
+}
+.citation {
+    font-style: italic;
+}
+#banniere {
+     height: 115px;
+}
 /*------------------ Formulaires -------------*/
-
+.soutien {
+    background-color: #f4f4f4;
+    padding-top: 30px;
+}
 .form_choice {
     display: block;
     text-align: center;

@@ -22,3 +22,10 @@ sr.reveal('.fonctionnement', {
     delay: 30,
     distance: '10%',
 });
+
+sr.reveal('.clients', { 
+    origin: 'bottom',
+    duration: 1500,
+    delay: 30,
+    distance: '50%',
+});

@@ -103,7 +103,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="card card-01 infinite fadeInDown">
+                        <div class="card card-01">
                             <img class="card-img-top" src="img/Visu_commercant.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <span class="badge-box"><i class="fa fa-check"></i></span>

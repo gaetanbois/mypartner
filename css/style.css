@@ -115,8 +115,12 @@ h1 {
 }
 .presentation {
     height: 300px;
-    background-color: #f4f4f4;
+    background-image: url(../img/adam-whitlock-270558.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
 }
+
 h2 {
     font-size: 2em;
     text-align: center;

@@ -10,14 +10,14 @@ sr.reveal('.text-home', {
 });
 
 sr.reveal('.presentation', { 
-    origin: 'left',
+    origin: 'bottom',
     duration: 1500,
     delay: 30,
     distance: '10%',
 });
 
 sr.reveal('.fonctionnement', { 
-    origin: 'rigth',
+    origin: 'bottom',
     duration: 1500,
     delay: 30,
     distance: '10%',

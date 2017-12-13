@@ -182,13 +182,10 @@ h3 {
     text-align:center;
 }
 .card-01.height-fix{
-    height:455px;
+    height:auto;
     overflow:hidden;}
 .card-01.height-fix .card-img-top{
     width:auto!important;
-}
-.card-body {
-    height: 360px;
 }
 
 /*
@@ -217,10 +214,6 @@ h3 {
 }
 .soutiens {
     margin-bottom: 60px;
-}
-
-.col-md-4 {
-    text-align: center;
 }
 
 .titlepartner {

@@ -38,6 +38,12 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Comment ça marche ?</a>
+                            </li> 
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pour qui ?</a>
+                            </li> 
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Nos partenaires</a>
                             </li>
                         </ul>
                     </div>

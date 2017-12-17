@@ -44,7 +44,7 @@
         <div class="input-group">
             <span class="input-group-addon"><i class="fa fa-map-marker fa-fw" aria-hidden="true"></i></span>
             <input type="text" name="cp" placeholder="Indiquez le code postal de votre commerce" class="form-control"
-                   ng-model="cp" id="cp_form_commercant" required>
+                   ng-model="cp" id="cp_form_commercant" pattern="[0-9]{5}" required>
         </div>
     </div>
     <div class="form-group">

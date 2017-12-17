@@ -16,6 +16,7 @@ var app = angular.module('app', []);
         vm.getUsers = getUsers;
         vm.saveLicencie = saveLicencie;
         vm.saveCommercant = saveCommercant;
+        vm.saveAssociation = saveAssociation;
 
         function getUsers(){
             // url += "baselines/compareRisks/" + idRiopp + "/" + date;
@@ -65,6 +66,29 @@ var app = angular.module('app', []);
             var url = "http://localhost:8888/Amazon%20Drive/Projets_perso/Web/MyPartnerGaetan/mypartner/src/SaveUsers.php"
                 + "?user=commercant" + "&nom=" + nom + "&prenom=" + prenom + "&nom_commerce=" + nom_commerce
                 + "&type=" + type + "&adresse=" + adresse + "&cp=" + cp + "&email=" + email;
+            var userPromise = $http.get(url);
+            userPromise.then(function(response){
+                $.toast({
+                    heading: 'Félicitations !',
+                    text: 'Votre inscription a bien été validée, merci !',
+                    icon: 'success',
+                    hideAfter:4000
+                })
+            });
+        }
+
+        function saveAssociation(nom, adresse, cp, email, telephone) {
+            // ensure no parameter is empty
+            if(nom === undefined || adresse === undefined || cp === undefined || email === undefined
+                || telephone === undefined ) {
+                return;
+            }
+
+            // var url = "http://mypartner.gearhostpreview.com/src/SaveUsers.php?prenom="
+            //     + prenom + "&nom=" + nom + "&user_type=" + user_type + "&email=" + email + "&ville=" + ville;
+            var url = "http://localhost:8888/Amazon%20Drive/Projets_perso/Web/MyPartnerGaetan/mypartner/src/SaveUsers.php"
+                + "?user=association" + "&nom=" + nom + "&adresse=" + adresse + "&cp=" + cp + "&email=" + email
+                + "&telephone=" + telephone;
             var userPromise = $http.get(url);
             userPromise.then(function(response){
                 $.toast({

@@ -354,3 +354,17 @@ input::-webkit-input-placeholder {
 .visible .infinite fadeInDown {
     
 }
+
+/*************** ROSACE ********************/
+
+#rosace {
+    cursor: pointer;
+}
+
+#text_rosace_association, #text_rosace_commercant, #text_rosace_licencie {
+    display: none;
+    margin-top: 30%;
+    text-align: justify;
+    -ms-text-align-last: center;
+    text-align-last: center;
+}

@@ -25,7 +25,8 @@
             <div class="navbar-fixed">
                 <nav class="navbar navbar-expand-lg navbar-light fixed-top">
                     <a class="navbar-brand" href="#"><img id="logo-nav" src="img/Logo_MyPartner_white.png" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
@@ -66,8 +67,7 @@
                 <h2>Qui sommes-nous ?</h2>
                 <hr>
                 <p id="text-presentation">
-                    Nous aidons les associations à rendre le sport accessible à tous en supprimant les coûts liés à la
-                    pratique de ses licenciés tout en enrichissant leur expérience sportive
+                    My Partner est la solution qui finance le sport amateur & l'aide à se développer !
                 </p>
             </div>
         </div>
@@ -79,18 +79,24 @@
                     <div class="col">
                         <img class="icone-f" src="img/ic_aidez.png" alt="Icone d'aide">
                         <h3>AIDE</h3>
-                        <p class="text-fonctionnement">Je choisis l'association sportive que mes commerçants partenaires sponsorisent.</p>
+                        <p class="text-fonctionnement">
+                            Je choisis l'association sportive que mes commerçants partenaires sponsorisent.
+                        </p>
                     </div>
                     <div class="col">
                         <img class="icone-f" src="img/ic_cagnottez.png" alt="Icone de Cagnotte">
                         <h3>CAGNOTTE</h3>
-                        <p class="text-fonctionnement">Cumule tes gains sur ton compte bancaire et finance l'activité sportive de ton choix.</p>
+                        <p class="text-fonctionnement">
+                            Cumule tes gains sur ton compte bancaire et finance l'activité sportive de ton choix.
+                        </p>
                     </div>
 
                     <div class="col">
                         <img class="icone-f" src="img/ic_benefice.png" alt="Icone de bénéfice">
                         <h3>BÉNÉFICE</h3>
-                        <p class="text-fonctionnement">Récupère 5 à 30% de tes dépenses auprès de nos commmerçants partenaires.</p>
+                        <p class="text-fonctionnement">
+                            Récupère 5 à 30% de tes dépenses auprès de nos commmerçants partenaires.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -118,7 +124,11 @@
                                 <span class="badge-box"><i class="fa fa-check"></i></span>
                                 <h4 class="card-title">Licenciés</h4>
                                 <hr>
-                                <p class="card-text">Soyez à l’origine d’un projet d’engagement social et solidaire dans votre commune. Economisez de l’argent avec un système de cash-back harmonieux et équitable pour tous. Grâce aux achats dans les magasins partenaires, la pratique du sport ne devient plus une contrainte financière, mais un loisir indispensable.</p>
+                                <p class="card-text">
+                                    Soyez à l’origine d’un projet d’engagement social et solidaire dans
+                                    votre commune. Economisez de l’argent avec un système de cash-back harmonieux et
+                                    équitable pour tous. Grâce aux achats dans les magasins partenaires, la pratique du
+                                    sport ne devient plus une contrainte financière, mais un loisir indispensable.</p>
                             </div>
                         </div>
                     </div>
@@ -130,7 +140,11 @@
                                 <span class="badge-box"><i class="fa fa-check"></i></span>
                                 <h4 class="card-title">Associations</h4>
                                 <hr>
-                                <p class="card-text">Plus de budget et moins de contraintes pour pérénniser votre vie associative. My Partner vous permettra de générer de nouvelles sources de revenus afin de fidéliser les adhérents de votre association grâce au financement de nouveaux projets sportifs.</p>
+                                <p class="card-text">
+                                    Plus de budget et moins de contraintes pour pérénniser votre vie associative.
+                                    My Partner vous permettra de générer de nouvelles sources de revenus afin de fidéliser
+                                    les adhérents de votre association grâce au financement de nouveaux projets sportifs.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -141,7 +155,10 @@
                                 <span class="badge-box"><i class="fa fa-check"></i></span>
                                 <h4 class="card-title">Commerçants</h4>
                                 <hr>
-                                <p class="card-text">Boostez votre business sans vous engager financièrement. Développez votre clientèle, fidélisez-la et faites prospérer votre commerce grâce au partenariat MyPartner.</p>
+                                <p class="card-text">
+                                    Boostez votre business sans vous engager financièrement. Développez votre clientèle,
+                                    fidélisez-la et faites prospérer votre commerce grâce au partenariat MyPartner.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -186,19 +203,29 @@
                         <img src="img/ic_partner1.png" alt="logo equipes">
                         <h3>US Maubeuge</h3>
                         <hr class="small">
-                        <p class="citation">"Notre objectif est clair, il faut trouver les 40K€ supplémentaire pour boucler notre budget, sinon on court droit à la catastrophe".</p>
+                        <p class="citation">
+                            "Notre objectif est clair, il faut trouver les 40K€ supplémentaire pour boucler notre budget,
+                            sinon on court droit à la catastrophe".
+                        </p>
                     </div>
                     <div class="col">
                         <img src="img/ic_partner2.png" alt="logo equipes">
                         <h3>ADAPT & FORM</h3>
                         <hr class="small">
-                        <p class="citation">"Des subventions ou aide financière de la part de sponsors qui régleraient pas mal de nos problèmes, notamment celui de la communication et nous aideraient à nous développer.»</p>
+                        <p class="citation">
+                            "Des subventions ou aide financière de la part de sponsors qui régleraient
+                            pas mal de nos problèmes, notamment celui de la communication et nous aideraient à nous développer."
+                        </p>
                     </div>
                     <div class="col">
                         <img src="img/ic_partner3.png" alt="logo equipes">
                         <h3>RC ARDRES</h3>
                         <hr class="small">
-                        <p class="citation">"Essayer de réduire nos dépenses ou faire des économies sur nos achats, aller chercher des sponsors pour continuer notre développement et faire attention à la bonne répartition des terrains pour le confort de nos licenciés."</p>
+                        <p class="citation">
+                            "Essayer de réduire nos dépenses ou faire des économies sur nos achats, aller chercher des
+                            sponsors pour continuer notre développement et faire attention à la bonne répartition des
+                            terrains pour le confort de nos licenciés."
+                        </p>
                     </div>
                 </div>
                 <div>
@@ -217,28 +244,35 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <img src="img/rosace-final.png" width="434" height="400" usemap="#rosace-final" border="0">
+                        <img src="img/rosace-final.png" width="434" height="400" usemap="#rosace-final" border="0"
+                             id="rosace">
                         <map name="rosace-final">
-                            <area shape="poly" coords="170,255,169,281,176,308,184,328,192,343,208,361,217,369,194,385,166,396,130,400,101,396,72,386,43,367,24,346,10,318,1,288,1,259,1,238,14,206,35,176,58,157,85,144,86,163,96,187,108,208,125,227,143,242,159,252,171,255,170,255" href="html/text-commercants.html">
-                            <area shape="poly" coords="85,143,85,113,94,80,107,55,127,33,152,15,184,3,214,0,245,3,282,16,309,37,330,62,343,88,348,115,348,142,323,137,294,135,262,141,239,151,216,166,195,149,160,137,132,135,111,137,84,143,84,143" href="html/text-association.html">
-                            <area shape="poly" coords="263,255,263,255,285,245,304,231,319,216,332,198,339,183,345,166,348,143,370,152,390,168,403,183,418,202,425,222,431,244,433,264,432,285,429,307,417,332,404,351,387,369,366,383,333,397,309,400,277,398,257,393,232,379,216,369,239,346,254,321,261,297,265,267,263,254" href="html/text-licencie.html">
+                            <area shape="poly" coords="170,255,169,281,176,308,184,328,192,343,208,361,217,369,194,385,
+                                                        166,396,130,400,101,396,72,386,43,367,24,346,10,318,1,288,1,259,
+                                                        1,238,14,206,35,176,58,157,85,144,86,163,96,187,108,208,125,227,
+                                                        143,242,159,252,171,255,170,255"
+                                  id="commercant_rosace">
+                            <area shape="poly" coords="85,143,85,113,94,80,107,55,127,33,152,15,184,3,214,0,245,3,282,
+                                                        16,309,37,330,62,343,88,348,115,348,142,323,137,294,135,262,141,
+                                                        239,151,216,166,195,149,160,137,132,135,111,137,84,143,84,143"
+                                  id="association_rosace">
+                            <area shape="poly" coords="263,255,263,255,285,245,304,231,319,216,332,198,339,183,345,166,
+                                                        348,143,370,152,390,168,403,183,418,202,425,222,431,244,433,264,
+                                                        432,285,429,307,417,332,404,351,387,369,366,383,333,397,309,400,
+                                                        277,398,257,393,232,379,216,369,239,346,254,321,261,297,265,267,
+                                                        263,254"
+                                  id ="licencie_rosace">
                         </map>
                     </div>
                     <div class="col">
-                        <div name="mypartnerText">
-                            <?php
-                            require('html/text-licencie.html');
-                            ?>
+                        <div id="text_rosace_licencie">
+                            Le texte que l'on souhaite afficher ici pour le licencié
                         </div>
-                        <div name="commercantText">
-                            <?php
-                            require('html/text-commercants.html');
-                            ?>
+                        <div id="text_rosace_commercant">
+                            Le texte du commerçant à faire apparaître
                         </div>
-                        <div name="associationForm">
-                            <?php
-                            require('html/text-association.html');
-                            ?>
+                        <div id="text_rosace_association">
+                            Et ici le texte pour l'association
                         </div>
                     </div>
                 </div>
@@ -279,17 +313,17 @@
                         </div>
                         <form name="licencieForm">
                             <?php
-                            require('html/form-licencie.html');
+                                require('html/form-licencie.html');
                             ?>
                         </form>
                         <form name="commercantForm">
                             <?php
-                            require('html/form-commercant.html');
+                                require('html/form-commercant.html');
                             ?>
                         </form>
                         <form name="associationForm">
                             <?php
-                            require('html/form-association.html');
+                                require('html/form-association.html');
                             ?>
                         </form>
                     </div>

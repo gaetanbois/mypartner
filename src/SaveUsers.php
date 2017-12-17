@@ -24,7 +24,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
     exit(0);
 }
 
-
 $HOST_ADDRESS = "mysql6.gear.host";
 $DATABASE_NAME = "mypartner";
 $DATABASE_USERNAME = "mypartner";
@@ -35,6 +34,11 @@ if($_GET['user'] == 'licencie') {
     saveLicencie($HOST_ADDRESS, $DATABASE_NAME, $DATABASE_USERNAME, $DATABASE_PASSWORD);
 } else if ($_GET['user'] == 'commercant') {
     saveCommercant($HOST_ADDRESS, $DATABASE_NAME, $DATABASE_USERNAME, $DATABASE_PASSWORD);
+} else if($_GET['user'] == 'association') {
+    saveAssociation($HOST_ADDRESS, $DATABASE_NAME, $DATABASE_USERNAME, $DATABASE_PASSWORD);
+} else {
+    // unsupported operation
+    die();
 }
 
 /**
@@ -79,6 +83,20 @@ function saveCommercant($HOST_ADDRESS, $DATABASE_NAME, $DATABASE_USERNAME, $DATA
     $insert->execute();
 }
 
+function saveAssociation($HOST_ADDRESS, $DATABASE_NAME, $DATABASE_USERNAME, $DATABASE_PASSWORD)
+{
+    $bdd = new PDO('mysql:host=' . $HOST_ADDRESS . ';dbname=' . $DATABASE_NAME, $DATABASE_USERNAME, $DATABASE_PASSWORD);
+    $sql = 'insert into association(nom, adresse, cp, email, telephone)
+                  values(:nom, :adresse, :cp, :email, :telephone)';
+    $insert = $bdd->prepare($sql);
+
+    $insert->bindParam(':nom', $_GET['nom']);
+    $insert->bindParam(':adresse', $_GET['adresse']);
+    $insert->bindParam(':cp', $_GET['cp']);
+    $insert->bindParam(':email', $_GET['email']);
+    $insert->bindParam(':telephone', $_GET['telephone']);
+    $insert->execute();
+}
 
 die();
 

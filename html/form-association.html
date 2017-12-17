@@ -4,7 +4,7 @@
         <div class="input-group">
             <span class="input-group-addon"><i class="fa fa-user fa-fw" aria-hidden="true"></i></span>
             <input type="text" name="nom" placeholder="Indiquez le nom de votre association" class="form-control"
-                   ng-model="nom_association" id="nom_form_association" required>
+                   ng-model="nom" id="nom_form_association" required>
         </div>
     </div>
     <div class="form-group">
@@ -12,7 +12,7 @@
         <div class="input-group">
             <span class="input-group-addon"><i class="fa fa-address-card fa-fw" aria-hidden="true"></i></span>
             <input type="text" name="adresse" placeholder="Indiquez l'adresse de votre association" class="form-control"
-                   ng-model="adresse_association" id="adresse_form_association" required>
+                   ng-model="adresse" id="adresse_form_association" required>
         </div>
     </div>
     <div class="form-group">
@@ -20,7 +20,7 @@
         <div class="input-group">
             <span class="input-group-addon"><i class="fa fa-map-marker fa-fw" aria-hidden="true"></i></span>
             <input type="text" name="cp" placeholder="Indiquez le code postal de votre association" class="form-control"
-                   ng-model="cp_association" id="cp_form_association" required>
+                   ng-model="cp" id="cp_form_association" pattern="[0-9]{5}" maxlength="5" required>
         </div>
     </div>
     <div class="form-group">
@@ -28,7 +28,7 @@
         <div class="input-group">
             <span class="input-group-addon"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i></span>
             <input type="email" name="email" placeholder="Indiquez votre email" class="form-control"
-                   ng-model="email_association" id="email_form_association" required>
+                   ng-model="email" id="email_form_association" required>
         </div>
     </div>
     <div class="form-group">
@@ -36,12 +36,12 @@
         <div class="input-group">
             <span class="input-group-addon"><i class="fa fa-phone fa-fw" aria-hidden="true"></i></span>
             <input type="tel" name="telephone" placeholder="Indiquez votre numéro de téléphone" class="form-control"
-                   ng-model="telephone_association" id="telephone_form_association" required>
+                   ng-model="telephone" id="telephone_form_association" maxlength="10" minlength="10" required>
         </div>
     </div>
     <div class="row submit">
         <input type="submit" class="btn btn-submit col-md-4 offset-md-4 submit-form" value="Valider"
                id="submit_form_association" ng-disabled="associationForm.$invalid"
-               ng-click="uc.saveLicencie(nom, prenom, date_naissance, adresse, cp, club, email,telephone)">
+               ng-click="uc.saveAssociation(nom, adresse, cp, email,telephone)">
     </div>
 </div>

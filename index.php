@@ -19,8 +19,6 @@
     </head>
     <body ng-app="app" ng-controller="UsersController as uc">
 
-
-
         <div class="home">
             <div class="navbar-fixed">
                 <nav class="navbar navbar-expand-lg navbar-light fixed-top">
@@ -35,16 +33,16 @@
                                 <a class="nav-link" href="#">Accueil</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Qui sommes nous ?</a>
+                                <a class="nav-link" href="#qui-sommes-nous">Qui sommes nous ?</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Comment ça marche ?</a>
+                                <a class="nav-link" href="#comment-ça-marche">Comment ça marche ?</a>
                             </li> 
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Pour qui ?</a>
+                                <a class="nav-link" href="#clients">Pour qui ?</a>
                             </li> 
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Nos partenaires</a>
+                                <a class="nav-link" href="#partenaires">Nos partenaires</a>
                             </li>
                         </ul>
                     </div>
@@ -54,7 +52,7 @@
                 <img id="logo-home" src="img/Logo_MyPartner.png" alt="Logo MyPartner Blanc">
                 <h1>Vous voulez changer le monde ? <br>
                     Ne changez rien...</h1>
-                <button type="button" class="btn btn-primary btn-lg" id="soutenez-nous">Soutenez-nous !</button>
+                <button type="button" class="btn btn-primary btn-lg soutenez-nous" id="soutenez-nous">Soutenez-nous !</button>
                 <section id="fleche-soutenez-nous" class="demo">
                     <a href=""><span></span></a>
                 </section>
@@ -62,7 +60,7 @@
         </div>
 
 
-        <div class="presentation">
+        <div class="presentation" id="qui-sommes-nous">
             <div class="container">
                 <h2>Qui sommes-nous ?</h2>
                 <hr>
@@ -71,7 +69,7 @@
                 </p>
             </div>
         </div>
-        <div class="fonctionnement">
+        <div class="fonctionnement" id="comment-ça-marche">
             <div class="container">
                 <h2>Comment ça marche ?</h2>
                 <hr>
@@ -106,13 +104,13 @@
         <div class="clic-form">
             <div class="soutenez-nous">
                 <h2 id="phrase-accroche">Si toi aussi tu penses qu'acheter malin peut améliorer ton quotidien</h2>
-                <a><button type="button" class="btn btn-primary btn-lg">Soutenez nous !</button></a>
+                <a><button type="button" class="btn btn-primary btn-lg soutiens-nous">Soutiens-nous !</button></a>
             </div>
         </div>
 
 
 
-        <div class="clients">
+        <div class="clients" id="clients">
             <div class="container">
                 <h2>Pour qui ?</h2>
                 <hr>
@@ -194,7 +192,7 @@
         <div class="titlepartner">
             <h2>ILS NOUS FONT CONFIANCE</h2>
         </div>
-        <div class="soutiens">
+        <div class="soutiens" id="partenaires">
             <div class="container">
                 <h2>Nos partenaires</h2>
                 <hr>
@@ -228,19 +226,26 @@
                         </p>
                     </div>
                 </div>
-                <div>
-                    <div class="logo-partenaire">
-                        <img class="rounded mx-auto d-block" src="img/e-leclerc-logo.png" alt="">
-                        <img class="rounded mx-auto d-block" src="img/Cora_logo.png" alt="">
-                        <img class="rounded mx-auto d-block" src="img/boulangerie.png" alt="">
-                        <img class="rounded mx-auto d-block" src="img/Keep-Cool-logo.png" alt="">
+            </div>
+        </div>
+        <div class="soutienCarousel">
+            <div id="myCarousel" class="carousel slide bg-inverse w-50 ml-auto mr-auto" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100 img-carousel" src="img/e-leclerc-logo.png" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 img-carousel" src="img/Cora_logo.png" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 img-carousel" src="img/boulangerie.png" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 img-carousel" src="img/Keep-Cool-logo.png" alt="Third slide">
                     </div>
                 </div>
             </div>
         </div>
-
-
-
 
         <div class="rosace">
             <div class="container">
@@ -341,7 +346,12 @@
         <script type="text/javascript" src="js/lib/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
         <script type="text/javascript" src="js/lib/jquery.toast.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+                integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous">
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+                integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous">
+        </script>
         <script type="text/javascript" src="js/app/script.js"></script>
         <script type="text/javascript" src="js/app/users.controller.js"></script>
         <script type='text/javascript' src='js/scroll.js'></script>

@@ -21,7 +21,7 @@ function scrollToAnchor(aid){
 }
 
 
-$('#soutenez-nous, #fleche-soutenez-nous').on('click', function() {
+$('#soutenez-nous, #fleche-soutenez-nous, .soutiens-nous').on('click', function() {
     scrollToAnchor('user-form');
 });
 

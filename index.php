@@ -229,14 +229,16 @@
                     </div>
                 </div>
                 <div>
-                    <div class="row">
-                        <div class="col">
-                            <img id="banniere" src="img/Bandeau_partenaires.png" alt="">
-                        </div>
+                    <div class="logo-partenaire">
+                        <img class="rounded mx-auto d-block" src="img/e-leclerc-logo.png" alt="">
+                        <img class="rounded mx-auto d-block" src="img/Cora_logo.png" alt="">
+                        <img class="rounded mx-auto d-block" src="img/boulangerie.png" alt="">
+                        <img class="rounded mx-auto d-block" src="img/Keep-Cool-logo.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
+
 
 
 
@@ -248,19 +250,19 @@
                              id="rosace">
                         <map name="rosace-final">
                             <area shape="poly" coords="170,255,169,281,176,308,184,328,192,343,208,361,217,369,194,385,
-                                                        166,396,130,400,101,396,72,386,43,367,24,346,10,318,1,288,1,259,
-                                                        1,238,14,206,35,176,58,157,85,144,86,163,96,187,108,208,125,227,
-                                                        143,242,159,252,171,255,170,255"
+                                                       166,396,130,400,101,396,72,386,43,367,24,346,10,318,1,288,1,259,
+                                                       1,238,14,206,35,176,58,157,85,144,86,163,96,187,108,208,125,227,
+                                                       143,242,159,252,171,255,170,255"
                                   id="commercant_rosace">
                             <area shape="poly" coords="85,143,85,113,94,80,107,55,127,33,152,15,184,3,214,0,245,3,282,
-                                                        16,309,37,330,62,343,88,348,115,348,142,323,137,294,135,262,141,
-                                                        239,151,216,166,195,149,160,137,132,135,111,137,84,143,84,143"
+                                                       16,309,37,330,62,343,88,348,115,348,142,323,137,294,135,262,141,
+                                                       239,151,216,166,195,149,160,137,132,135,111,137,84,143,84,143"
                                   id="association_rosace">
                             <area shape="poly" coords="263,255,263,255,285,245,304,231,319,216,332,198,339,183,345,166,
-                                                        348,143,370,152,390,168,403,183,418,202,425,222,431,244,433,264,
-                                                        432,285,429,307,417,332,404,351,387,369,366,383,333,397,309,400,
-                                                        277,398,257,393,232,379,216,369,239,346,254,321,261,297,265,267,
-                                                        263,254"
+                                                       348,143,370,152,390,168,403,183,418,202,425,222,431,244,433,264,
+                                                       432,285,429,307,417,332,404,351,387,369,366,383,333,397,309,400,
+                                                       277,398,257,393,232,379,216,369,239,346,254,321,261,297,265,267,
+                                                       263,254"
                                   id ="licencie_rosace">
                         </map>
                     </div>
@@ -313,17 +315,17 @@
                         </div>
                         <form name="licencieForm">
                             <?php
-                                require('html/form-licencie.html');
+                            require('html/form-licencie.html');
                             ?>
                         </form>
                         <form name="commercantForm">
                             <?php
-                                require('html/form-commercant.html');
+                            require('html/form-commercant.html');
                             ?>
                         </form>
                         <form name="associationForm">
                             <?php
-                                require('html/form-association.html');
+                            require('html/form-association.html');
                             ?>
                         </form>
                     </div>

@@ -7,6 +7,7 @@ sr.reveal('.text-home', {
     duration: 1500,
     delay: 30,
     distance: '10%',
+    mobile: false,
 });
 
 sr.reveal('.presentation', { 
@@ -14,6 +15,7 @@ sr.reveal('.presentation', {
     duration: 1500,
     delay: 30,
     distance: '10%',
+    mobile: false,
 });
 
 sr.reveal('.fonctionnement', { 
@@ -21,6 +23,7 @@ sr.reveal('.fonctionnement', {
     duration: 1500,
     delay: 30,
     distance: '10%',
+    mobile: false,
 });
 
 sr.reveal('.clients', { 
@@ -28,4 +31,5 @@ sr.reveal('.clients', {
     duration: 1500,
     delay: 30,
     distance: '50%',
+    mobile: false,
 });

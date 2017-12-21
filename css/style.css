@@ -68,6 +68,13 @@ section::after {
     }
 }
 /*-----------------HEADER-----------------------*/
+.applilogo {
+    padding-top: 2%;
+}
+.application {
+    background-color: #f4f4f4;
+    width: 100%;
+}
 .btn-primary {
     margin-top: 20px;
     background-color: #fd9700;
@@ -76,82 +83,9 @@ section::after {
 .btn-primary:hover {
     background-color: #8e24aa;
 }
-h1 {
-    text-align: center;
-    font-size: 3em;
-    margin-top: 40px;
-}
-.home {
-    background-image:url(../img/backgroun-opacity.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-}
-#logo-home {
-    margin-top: 10%;
-}
-
-#logo-nav {
-    height: 40px;
-    margin-left: 10px;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color:white;
-}
-.navbar {
-    background-color: #03a6f0;
-}
-
-.text-home {
-    text-align: center;
-}
-/*------------------Qui sommes nous ? ----------*/
-#text-presentation {
-    text-align: center;
-    font-size: 1em;
-    margin-top: 30px;
-}
-.presentation {
-    height: 300px;
-    background-image: url(../img/adam-whitlock-270558.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: bottom;
-}
-
-h2 {
-    font-size: 2em;
-    text-align: center;
-    margin: 0;
-    padding-top: 60px;
-}
-hr {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border: 0px;
-    height: 2px;
-    background-color: #03a6f0;
-}
-
-/*-----------------------------*/
-
-h3 {
-    text-align: center;
-    padding-top: 20px;
-    font-size: 1.5em;
-}
-
 .col {
     text-align: center;
     margin-bottom: 40px;
-}
-#phrase-accroche {
-    color: black;
-}
-.soutenez-nous{
-    padding-top: 30px;
 }
 .clic-form {
     height: 400px;
@@ -187,35 +121,88 @@ h3 {
 .card-01.height-fix .card-img-top{
     width:auto!important;
 }
-
-/*
-.footer {
-    height: 1000px;
+.citation {
+    font-style: italic;
 }
-*/
-
-#mockup {
-    height: 400px;
+h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 40px;
 }
-
+h2 {
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
+    padding-top: 60px;
+}
+h3 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1.5em;
+}
+hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 0px;
+    height: 2px;
+    background-color: #03a6f0;
+}
+.home {
+    background-image:url(../img/backgroun-opacity.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+#logo-home {
+    margin-top: 10%;
+}
 .logoappli {
     height: 80px;
 }
-.applilogo {
-    padding-top: 2%;
+#logo-nav {
+    height: 40px;
+    margin-left: 10px;
 }
-.application {
-    background-color: #f4f4f4;
-    width: 100%;
+#mockup {
+    height: 400px;
 }
-
+.navbar-light .navbar-nav .nav-link {
+    color:white;
+}
+.navbar {
+    background-color: #03a6f0;
+}
+#phrase-accroche {
+    color: black;
+}
+.presentation {
+    height: 300px;
+    background-image: url(../img/adam-whitlock-270558.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+}
+.soutenez-nous{
+    padding-top: 30px;
+}
 .soutiens img {
     height: 240px;
 }
 .soutiens {
     margin-bottom: 60px;
 }
-
+.small {
+    width: 20px;
+}
+.text-home {
+    text-align: center;
+}
+#text-presentation {
+    text-align: center;
+    font-size: 1em;
+    margin-top: 30px;
+}
 .titlepartner {
     background-image: url(../img/rejoins-nous.jpg);
     background-attachment: fixed;
@@ -223,20 +210,10 @@ h3 {
     background-size: cover;
     height: 300px;
 }
-
 .titlepartner h2 {
     font-size: 2.5em;
     color: white;
     padding-top: 4%;
-}
-.small {
-    width: 20px;
-}
-.citation {
-    font-style: italic;
-}
-#banniere {
-     height: 115px;
 }
 /*------------------ Formulaires -------------*/
 .soutien {
@@ -367,4 +344,35 @@ input::-webkit-input-placeholder {
     text-align: justify;
     -ms-text-align-last: center;
     text-align-last: center;
+}
+/*************** MEDIA QUERIES *************/
+
+@media (max-width: 1080px){
+    #logo-home {
+        width: 200px;
+        margin-top: 20%;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    h3 {
+        font-size: 1.8em;
+    }
+    .home {
+    background-image:url(../img/stade-phone.jpg);
+    background-size: auto;
+    }
+    .presentation {
+    height: 300px;
+    background-image: url(../img/adam-whitlock-270558.jpg);
+    background-attachment: fixed;
+    background-size: auto;
+    background-position: bottom;
+    }
+    #mockup {
+    height: 300px;
+    }
+    .logoappli {
+    height: 48px;
+    }
 }

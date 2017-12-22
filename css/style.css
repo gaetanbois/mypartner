@@ -124,6 +124,10 @@ section::after {
 .citation {
     font-style: italic;
 }
+.footer {
+    height: 100px;
+    background-color: #03a6f0;
+}
 h1 {
     text-align: center;
     font-size: 3em;
@@ -324,13 +328,7 @@ input::-webkit-input-placeholder {
 .control-label {
     padding-top: 3px;
 }
-
-.visible .infinite fadeInDown {
-    
-}
-
 /*************** ROSACE ********************/
-
 #rosace {
     cursor: pointer;
 }

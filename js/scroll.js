@@ -7,7 +7,7 @@ $('.bxslider').bxSlider({
 });
 
 // Changing the defaults
-window.sr = ScrollReveal({ reset: true });
+window.sr = ScrollReveal({ reset: false });
 
 // Customizing a reveal set
 sr.reveal('.text-home', { 

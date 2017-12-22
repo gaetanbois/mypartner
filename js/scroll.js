@@ -1,3 +1,11 @@
+$('.bxslider').bxSlider({
+  auto: true,
+  autoControls: true,
+  stopAutoOnClick: true,
+  pager: true,
+  slideWidth: 600
+});
+
 // Changing the defaults
 window.sr = ScrollReveal({ reset: true });
 
@@ -33,3 +41,5 @@ sr.reveal('.clients', {
     distance: '50%',
     mobile: false,
 });
+
+	

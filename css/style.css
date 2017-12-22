@@ -183,9 +183,7 @@ hr {
     background-size: cover;
     background-position: bottom;
 }
-.soutenez-nous{
-    padding-top: 30px;
-}
+
 .soutiens img {
     height: 240px;
 }
@@ -376,16 +374,6 @@ input::-webkit-input-placeholder {
     height: 48px;
     }
 }
-
-.soutienCarousel {
-    width: 100%;
-    height: 400px;
-    background-color: #f4f4f4;
-    margin-bottom: 5%;
-}
-
-.img-carousel {
-    margin-top: 3%;
-    width: 640px;
-    height: 360px;
+.bx-wrapper {
+    margin: auto;
 }

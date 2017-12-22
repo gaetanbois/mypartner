@@ -14,6 +14,8 @@
         <link type="text/css" rel="stylesheet" href="css/style.css"/>
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
         <link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/node_modules/bxslider/dist/jquery.bxslider.css">
+
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
@@ -228,25 +230,14 @@
                 </div>
             </div>
         </div>
-        <div class="soutienCarousel">
-            <div id="myCarousel" class="carousel slide bg-inverse w-50 ml-auto mr-auto" data-ride="carousel">
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100 img-carousel" src="img/e-leclerc-logo.png" alt="First slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100 img-carousel" src="img/Cora_logo.png" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100 img-carousel" src="img/boulangerie.png" alt="Third slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100 img-carousel" src="img/Keep-Cool-logo.png" alt="Third slide">
-                    </div>
-                </div>
-            </div>
+        <div class="container">
+            <ul class="bxslider">
+                <li><img src="img/cora.png" /></li>
+                <li><img src="img/boulangerie.png" /></li>
+                <li><img src="img/leclerc.png" /></li>
+                <li><img src="img/keepcool.png" /></li>
+            </ul>
         </div>
-
         <div class="rosace">
             <div class="container">
                 <div class="row">
@@ -341,8 +332,10 @@
         <div class="footer"></div>
 
         <!--Import jQuery before materialize.js-->
-        <script type='text/javascript' src='node_modules/scrollreveal/dist/scrollreveal.min.js'></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
+        <script type='text/javascript' src='node_modules/scrollreveal/dist/scrollreveal.min.js'></script>
         <script type="text/javascript" src="js/lib/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
         <script type="text/javascript" src="js/lib/jquery.toast.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>

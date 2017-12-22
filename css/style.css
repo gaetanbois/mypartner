@@ -296,7 +296,6 @@ hr {
 }
 
 #association_form {
-    background-color: rgb(114,68,136);
     background-color: rgba(114,68,136, 0.8);
 }
 
@@ -340,10 +339,22 @@ input::-webkit-input-placeholder {
 
 #text_rosace_association, #text_rosace_commercant, #text_rosace_licencie {
     display: none;
-    margin-top: 30%;
+    margin-top: 20%;
     text-align: justify;
     -ms-text-align-last: center;
     text-align-last: center;
+}
+
+.licencie-rosace {
+    color: #03a6f0;
+}
+
+.commercant-rosace {
+    color: rgba(114,68,136, 0.8);
+}
+
+.association-rosace {
+    color: rgba(253,151,0, 0.8);
 }
 /*************** MEDIA QUERIES *************/
 

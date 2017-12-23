@@ -177,7 +177,7 @@
                     </div>
                     <div class="col applilogo">
 
-                        <h3>Application bientôt disponible !</h3>
+                        <h2>Application bientôt disponible !</h2>
                         <hr>
                         <p>Rejoignez MyPartner, la plateforme sociale indispensable de l’univers sportif.<br><br>
                             Le processus Win-Win pour chacunes des parties permet d’offrir un cercle vertueux et bénéfique.<br><br>
@@ -320,7 +320,6 @@
 
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
     <script type='text/javascript' src='node_modules/scrollreveal/dist/scrollreveal.min.js'></script>
     <script type="text/javascript" src="js/lib/jquery-ui-1.12.1.custom/jquery-ui.js"></script>

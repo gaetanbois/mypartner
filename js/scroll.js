@@ -1,16 +1,16 @@
 $('.bxslider').bxSlider({
-  auto: true,
-  autoControls: true,
-  stopAutoOnClick: true,
-  pager: true,
-  slideWidth: 600
+    auto: true,
+    autoControls: true,
+    stopAutoOnClick: true,
+    pager: false,
+    slideWidth: 1200,
 });
 
 // Changing the defaults
-window.sr = ScrollReveal({ reset: false });
+window.sr = ScrollReveal({reset: false});
 
 // Customizing a reveal set
-sr.reveal('.text-home', { 
+sr.reveal('.text-home', {
     origin: 'top',
     duration: 1500,
     delay: 30,
@@ -18,7 +18,7 @@ sr.reveal('.text-home', {
     mobile: false,
 });
 
-sr.reveal('.presentation', { 
+sr.reveal('.presentation', {
     origin: 'bottom',
     duration: 1500,
     delay: 30,
@@ -26,7 +26,7 @@ sr.reveal('.presentation', {
     mobile: false,
 });
 
-sr.reveal('.fonctionnement', { 
+sr.reveal('.fonctionnement', {
     origin: 'bottom',
     duration: 1500,
     delay: 30,
@@ -34,7 +34,7 @@ sr.reveal('.fonctionnement', {
     mobile: false,
 });
 
-sr.reveal('.clients', { 
+sr.reveal('.clients', {
     origin: 'bottom',
     duration: 1500,
     delay: 30,

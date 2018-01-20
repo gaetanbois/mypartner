@@ -252,7 +252,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="col-md-8 col-md-offset-2 container bxslider_container">
             <ul class="bxslider">
                 <li><img src="img/cora.png" /></li>
                 <li><img src="img/boulangerie.png" /></li>
@@ -296,17 +296,17 @@
                     </div>
                     <form name="licencieForm">
                         <?php
-                    require('html/form-licencie.html');
+                            require('html/form-licencie.html');
                         ?>
                     </form>
                     <form name="commercantForm">
                         <?php
-                        require('html/form-commercant.html');
+                            require('html/form-commercant.html');
                         ?>
                     </form>
                     <form name="associationForm">
                         <?php
-                        require('html/form-association.html');
+                            require('html/form-association.html');
                         ?>
                     </form>
                 </div>

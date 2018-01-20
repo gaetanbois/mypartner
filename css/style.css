@@ -383,6 +383,7 @@ input::-webkit-input-placeholder {
     height: 48px;
     }
 }
-.bx-wrapper {
-    margin: auto;
+.bxslider img {
+    display: block;
+    margin: 0 auto;
 }

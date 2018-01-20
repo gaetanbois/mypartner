@@ -236,3 +236,8 @@ fabric.properties
 .idea/modules.xml
 .idea/mypartner.iml
 .idea/workspace.xml
+
+
+
+#node_modules
+/node_modules

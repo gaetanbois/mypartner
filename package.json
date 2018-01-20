@@ -1,0 +1,24 @@
+{
+  "name": "mypartner",
+  "version": "1.0.0",
+  "description": "MyPartner project",
+  "main": "index.php",
+  "dependencies": {
+    "scrollreveal": "^3.3.6",
+    "bxslider": "^4.2.13"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaetanbois/mypartner.git"
+  },
+  "author": "qlassalle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gaetanbois/mypartner/issues"
+  },
+  "homepage": "https://github.com/gaetanbois/mypartner#readme"
+}

@@ -168,6 +168,10 @@ hr {
     height: 40px;
     margin-left: 10px;
 }
+#logo-nav-back-to-site {
+    height: 50px;
+    margin-left: 10px;
+}
 #mockup {
     height: 400px;
 }
@@ -176,6 +180,10 @@ hr {
 }
 .navbar {
     background-color: #03a6f0;
+}
+
+.navbar-justif {
+    background-color: #ececec;
 }
 #phrase-accroche {
     color: black;
@@ -390,6 +398,7 @@ input::-webkit-input-placeholder {
 
 .justif-title {
     color: dimgrey;
+    margin-top: 5%;
     margin-bottom: 15px;
 }
 
@@ -399,4 +408,26 @@ input::-webkit-input-placeholder {
 
 .justificatif-row {
     padding: 5px;
+}
+
+.detail_justif {
+    font-size: 11px;
+    color: dimgrey;
+    font-style: italic;
+}
+
+.submit_justif {
+    margin-top: 3%;
+}
+
+#fichier_justificatif {
+    margin-left: -12%;
+}
+
+.justif_requirements, .justif_requirements > li{
+    margin-top: 8px;
+}
+
+.back-to-site {
+    color: black;
 }

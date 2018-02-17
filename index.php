@@ -1,25 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>MyPartner</title>
-        <!--Import Google Icon Font-->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <!--Import materialize.css-->
+<?php
+    $title = 'My Partner';
+    require('html/entete.php');
+?>
 
-        <!--        <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>-->
-        <link rel="stylesheet" href="bootstrap-4/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-        <link type="text/css" rel="stylesheet" href="js/lib/jquery-ui-1.12.1.custom/jquery-ui.min.css"/>
-        <link type="text/css" rel="stylesheet" href="css/lib/jquery.toast.min.css"/>
-        <link type="text/css" rel="stylesheet" href="css/style.css"/>
-        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="./node_modules/bxslider/src/css/jquery.bxslider.css">
-
-
-        <!--Let browser know website is optimized for mobile-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
     <body ng-app="app" ng-controller="UsersController as uc">
 
         <div class="home">
@@ -181,8 +164,10 @@
                         <h2>Application bientôt disponible !</h2>
                         <hr>
                         <p>Rejoignez MyPartner, la plateforme sociale indispensable de l’univers sportif.<br><br>
-                            Le processus Win-Win pour chacunes des parties permet d’offrir un cercle vertueux et bénéfique.<br><br>
-                            L’application MyPartner permet de simplifier vos interactions et de voir votre cagnotte évoluer après chaque achat.
+                            Le processus Win-Win pour chacunes des parties permet d’offrir un cercle vertueux et bénéfique.
+                            <br><br>
+                            L’application MyPartner permet de simplifier vos interactions et de voir votre cagnotte
+                            évoluer après chaque achat.
                         </p>
                         <img class="logoappli" src="img/appstore.png" alt="logo appli apple">
                         <img class="logoappli" src="img/google.png" alt="logo appli google">
@@ -200,7 +185,8 @@
                 $DATABASE_USERNAME = "mypartner";
                 $DATABASE_PASSWORD = "Du2ecpjf_W_P";
 
-                $bdd = new PDO('mysql:host=' . $HOST_ADDRESS .';dbname=' . $DATABASE_NAME, $DATABASE_USERNAME, $DATABASE_PASSWORD);
+                $bdd = new PDO('mysql:host=' . $HOST_ADDRESS .';dbname=' . $DATABASE_NAME, $DATABASE_USERNAME,
+                    $DATABASE_PASSWORD);
                 $sql = 'select count(id) from licencie';
                 $count = $bdd->prepare($sql);
                 $count->execute();
@@ -314,10 +300,7 @@
         </div>
     </div>
 
-    <div class="footer">
-        
-    
-    </div>
+    <div class="footer"></div>
 
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -326,11 +309,15 @@
     <script type="text/javascript" src="js/lib/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
     <script type="text/javascript" src="js/lib/jquery.toast.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+            integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous">
+
+    </script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+            integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous">
+    </script>
     <script type="text/javascript" src="js/app/script.js"></script>
     <script type="text/javascript" src="js/app/users.controller.js"></script>
     <script type='text/javascript' src='js/scroll.js'></script>
-
     </body>
 </html>

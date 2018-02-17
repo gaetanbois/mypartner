@@ -387,3 +387,16 @@ input::-webkit-input-placeholder {
     display: block;
     margin: 0 auto;
 }
+
+.justif-title {
+    color: dimgrey;
+    margin-bottom: 15px;
+}
+
+.justificatif-form {
+    padding-top: 10px;
+}
+
+.justificatif-row {
+    padding: 5px;
+}
